@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Page | 2022</title>
+
+    <!-- Linking Favicon -->
+    <link
+      rel="shortcut icon"
+      href="/img/1200px-Javascript-shield.svg.png"
+      type="image.x-icon"
+    />
+
+    <!-- Linking Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Swiper CSS-->
+    <link rel="stylesheet" href="/styles/swiper-bundle.min.css" />
+
+    <!-- Linking Stylesheet -->
+    <link rel="stylesheet" href="/styles/styles.css" />
+
+    <!-- mobile begint bij 350px-->
+  </head>
+  <body>
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        
+        <a href="#" class="nav__logo"> Ab2u <i class="bx bxs-star"></i> </a>
+
+        <div class="nav__menu">
+
+          <ul class="nav__list">
+
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt-2"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#popular" class="nav__link">
+                <i class="bx bx-building-house"></i>
+                <span>Residences</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#value" class="nav__link">
+                <i class="bx bx-award"></i>
+                <span>Value </span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-phone"></i>
+                <span>Contact </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Theme change button-->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+        <a href="#" class="button nav__button">Nu afspreken</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- HOME-->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data">
+            <h1 class="home__title">
+              Maak kennis <br />
+              Op mijn Intro<br />
+              Website van Ab2u 
+            </h1>
+
+            <p class="home__description">
+              Dit is een intro project die ik graag wil mergen naar GitHub, en tevens ook online gaan. Dit doe ik door mezelf te ontwikkelen en andere mensen te helpen. Wil jij ook wat leren? Laat jou email achter.
+            </p>
+
+            <form action="" class="home__search">
+              <i class="bx bxs-message-detail"></i>
+              <input
+                type="search"
+                placeholder="Dit is mijn e-mail.."
+                class="home__search-input"
+              />
+              <button class="button">Versturen</button>
+            </form>
+
+            <div class="home__value">
+              <div>
+                <h1 class="home__value-number">9<span>+</span></h1>
+                <span class="home__value-description">
+                  Ondernemers <br />
+                  Geholpen
+                </span>
+              </div>
+
+              <div>
+                <h1 class="home__value-number">20<span>+</span></h1>
+                <span class="home__value-description">
+                  Aanvragen <br />
+                  Gehad
+                </span>
+              </div>
+
+              <div>
+                <h1 class="home__value-number">71<span>+</span></h1>
+                <span class="home__value-description">
+                  Koffie <br />
+                  Uitgedeeld
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="home__images">
+            <div class="home__orbe"></div>
+
+            <div class="home__img">
+              <img src="/img/Student guy studying on internet.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LOGOS-->
+      <section class="logos section">
+        <div class="logos__container container grid">
+          <div class="logos__img">
+            <img src="/img/768px-HTML5_logo_and_wordmark.svg.png" alt="" />
+          </div>
+
+          <div class="logos__img">
+            <img src="/img/CSS3_logo_and_wordmark.svg.png" alt="" />
+          </div>
+
+          <div class="logos__img">
+            <img src="/img/Vue.js_Logo_2.svg.png" alt="" />
+          </div>
+
+          <div class="logos__img">
+            <img src="/img/1200px-Javascript-shield.svg.png" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- POPULAR-->
+      <section class="popular section" id="popular">
+        <div class="container">
+          <span class="section__subtitle">Mijn Gameplan</span>
+          <h2 class="section__title">Verhalen over ontwikkelingen<span>.</span></h2>
+
+          <div class="popular__container swiper">
+            <!-- lege div voor de swiperjs -->
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
+                <img
+                  src="/img/Student guy studying on internet.jpg"
+                  alt=""
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>-</span> HTML</h2>
+                  <h3 class="popular__title">Kennis maken met Markup</h3>
+                  <p class="popular__description">
+                    Om een website te maken is het belangrijk om te starten met HTML. Dit is de fundament van elke website.
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="/img/20945431.jpg"
+                  alt=""
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>- </span>CSS</h2>
+                  <h3 class="popular__title">Stylen met Cascading</h3>
+                  <p class="popular__description">
+                    Stylen van een website doe je met CSS. Dit is een belangrijke onderdeel van iedere development process inclusief layout design.
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="/img/Student guy studying on internet.jpg"
+                  alt=""
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>- </span>Javascript</h2>
+                  <h3 class="popular__title">Functies tot actie</h3>
+                  <p class="popular__description">
+                    Javascript is voor mij een van de moeilijkste onderdelen geweest waar je front+backend kan programmeren.
+                  </p>
+                </div>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img
+                  src="/img/20945431.jpg"
+                  alt=""
+                  class="popular__img"
+                />
+
+                <div class="popular__data">
+                  <h2 class="popular__price"><span>- </span>Vue.JS</h2>
+                  <h3 class="popular__title">Versnellen met Framework</h3>
+                  <p class="popular__description">
+                    Wanneer alles eigen word kan je jou project ook versnellen met een gekozen Framework. In mijn geval focus ik mij op Vue.Js
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="bx bx-chevron-right"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-chevron-left"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUE-->
+      <section class="value section" id="value">
+        <div class="value__container container grid">
+          <div class="value__images">
+            <div class="value__orbe"></div>
+            <div class="value__img">
+              <img src="/img/768px-HTML5_logo_and_wordmark.svg.png" alt="" />
+            </div>
+          </div>
+          <div class="value__content">
+            <div class="value__data">
+              <span class="section__subtitle">HTML als Basis</span>
+              <h2 class="section__title">Sterke Mark-up kennis </h2>
+              <p class="value__description">
+                De meeste mensen onderschatten hoe belangrijk het is om een goede basis kennis te hebben van HTML. De mark-up zorgt er voor dat de fundament van de website solid word.
+              </p>
+            </div>
+
+            <!--Accourdon-->
+            <div class="value__accordion">
+              <div class="value__accordion-item">
+                <header class="value__accordion-header">
+                  <i class="bx bx-book value__accordion-icon"></i>
+                  <h3 class="value__accordion-title">
+                    Hoe begon jou journey 
+                  </h3>
+                  <div class="value__accordion-arrow">
+                    <i class="bx bxs-down-arrow"></i>
+                  </div>
+                </header>
+
+                <div class="value__accordion-content">
+                  <p class="value__accordion-description">
+                    Voor mij is het alweer een lange tijd geleden dat ik ben begonnen met de coding journey. In 2018 kreeg ik interesse om een programmeur te worden in de Software. Snel bleek dat ik meer passie had voor de Front-end.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__accordion-item">
+                <header class="value__accordion-header">
+                  <i class="bx bxs-package value__accordion-icon"></i>
+                  <h3 class="value__accordion-title">Hoe zag jou journey eruit</h3>
+                  <div class="value__accordion-arrow">
+                    <i class="bx bxs-down-arrow"></i>
+                  </div>
+                </header>
+
+                <div class="value__accordion-content">
+                  <p class="value__accordion-description">
+                    Na een keuze te hebben gemaakt om volledig te stoppen met Software heeft het nog 1 jaar geduurd om de Front-end op te maken. Tussendoor had ik ook veel tegenslagen waardoor ik telkens stopte met coderen en oefenen. In 2022 heb ik besloten om me 1000% in te zetten en het beste eruit te halen.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__accordion-item">
+                <header class="value__accordion-header">
+                  <i class="bx bxs-bar-chart-square value__accordion-icon"></i>
+                  <h3 class="value__accordion-title">Hoe ging je om met tegenslagen </h3>
+                  <div class="value__accordion-arrow">
+                    <i class="bx bxs-down-arrow"></i>
+                  </div>
+                </header>
+
+                <div class="value__accordion-content">
+                  <p class="value__accordion-description">
+                    In mijn journey heb ik veel tegenslagen gehad waardoor ik niet kon presteren. Coderen is een uitlaatklep voor mij waarvan ik tot rust kom. Ik bleef altijd positief omdat ik wist dat het toch goed zou komen. Als ik er niet bij was wist ik in mijn hoofd wel dat het goed zou komen.
+                  </p>
+                </div>
+              </div>
+
+              <div class="value__accordion-item">
+                <header class="value__accordion-header">
+                  <i class="bx bxs-check-square value__accordion-icon"></i>
+                  <h3 class="value__accordion-title">Wat staat er op het spel</h3>
+                  <div class="value__accordion-arrow">
+                    <i class="bx bxs-down-arrow"></i>
+                  </div>
+                </header>
+
+                <div class="value__accordion-content">
+                  <p class="value__accordion-description">
+                    In de afgelopen weken was ik hard bezig met het voorbereiden van mijn Directories inclusief mijn Git omgeving als Source Control. In de komende maanden wil ik mij vooral richting op het ontwerpen en ontwikkelen van mooie web-pagina's. 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT-->
+
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__images">
+            <div class="contact__orbe"></div>
+
+            <div class="contact__img">
+              <img src="/img/CSS3_logo_and_wordmark.svg.png" alt="" />
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <div class="contact__data">
+              <span class="section__subtitle">Laten we linken</span>
+              <h2 class="section__title">Sta jij open om kennis te maken?</h2>
+              <p class="contact__description">
+                Ik sta altijd open voor nieuwe ideeen en nieuwe technologien. Heb je misschien een project waarmee ik jou kan helpen of van dienst kan zijn? <br><br>Schroom niet om een DM achter te laten, en ik help jou graag in het verwezelijken van jou dromen in deze digitale tijdperk.
+              </p>
+            </div>
+
+            <div class="contact__card">
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxs-phone-call"></i>
+                  <div>
+                    <h3 class="contact__card-title">Bellen</h3>
+                    <p class="contact__card-description">0604593913</p>
+                  </div>
+                </div>
+
+                <button class="button contact__card-button">Nu Bellen</button>
+              </div>
+
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxs-message-rounded-dots"></i>
+                  <div>
+                    <h3 class="contact__card-title">Chat</h3>
+                    <p class="contact__card-description">0604593913</p>
+                  </div>
+                </div>
+
+                <button class="button contact__card-button">Nu Chatten</button>
+              </div>
+
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxs-video"></i>
+                  <div>
+                    <h3 class="contact__card-title">Facetime Call</h3>
+                    <p class="contact__card-description">ab2u@icloud.com</p>
+                  </div>
+                </div>
+
+                <button class="button contact__card-button">
+                  Nu Facetimen
+                </button>
+              </div>
+
+              <div class="contact__card-box">
+                <div class="contact__card-info">
+                  <i class="bx bxs-envelope"></i>
+                  <div>
+                    <h3 class="contact__card-title">Mailen</h3>
+                    <p class="contact__card-description">0604593913</p>
+                  </div>
+                </div>
+
+                <button class="button contact__card-button">Mail Mij</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Suscribe-->
+      <section class="subscribe section">
+        <div class="subscribe__container container">
+          <h1 class="subscribe__title">Vriendelijk bedankt voor de moeite en tijd</h1>
+          <p class="subscribe__description">
+            Laat jou mail achter, en blijf zo up to date met mijn laatste blog posts en veel meer. Op deze pagina ga ik vaker bloggen, en ik hoop om jou als een bezoeker te entertainen.
+          </p>
+          <a href="#" class="button subscribe__button">Geintresseerd </a>
+        </div>
+      </section>
+
+      <!--Footer-->
+      <footer class="footer section">
+        <div class="footer__container container grid">
+          <div>
+            <a href="#" class="footer__logo">
+              Ab2u <i class="bx bxs-home-alt-2"></i>
+            </a>
+            <p class="footer__description">
+              Niemand minder dan de enige echte Ab2u. <br>Blijf up to date voor leuke acties.
+            </p>
+          </div>
+
+          <div class="footer__content">
+            <div>
+              <h3 class="footer__title">Over Mij</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">Kennis Maken</a></li>
+                <li><a href="#" class="footer__link">ideeen bespreken</a></li>
+                <li><a href="#" class="footer__link">Sparring sessie</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Doelen</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">Analyse</a></li>
+                <li><a href="#" class="footer__link">Security</a></li>
+                <li><a href="#" class="footer__link">Visie</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Assistentie</h3>
+              <ul class="footer__links">
+                <li><a href="#" class="footer__link">FAQs</a></li>
+                <li><a href="#" class="footer__link">Hulp aanvragen</a></li>
+                <li><a href="#" class="footer__link">Neem contact</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="footer__title">Socials</h3>
+              <ul class="footer__social">
+                <a href="https://www.facebook.com" class="footer__social-link">
+                  <i class="bx bxl-facebook-circle"></i>
+                </a>
+                <a href="https://www.instagram.com" class="footer__social-link">
+                  <i class="bx bxl-instagram-alt"></i>
+                </a>
+                <a href="https://www.pinterest.com" class="footer__social-link">
+                  <i class="bx bxl-pinterest"></i>
+                </a>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__info container">
+          <span class="footer__copy">
+            &#169; Abdurabi. All rights reserved
+          </span>
+
+          <div class="footer__privacy">
+            <a href="#">Algemene voorwaarden</a>
+            <a href="#">Privacy Poicy</a>
+          </div>
+        </div>
+      </footer>
+
+      <!-- scroll up-->
+      <a href="#" class="scrollup" id="scroll-up">
+        <i class="bx bx-chevrons-up"></i>
+      </a>
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="/scripts/swiper-bundle.min.js"></script>
+
+    <!-- Linking MainJs -->
+    <script src="/scripts/main.js"></script>
+  </body>
+</html>
